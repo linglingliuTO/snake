@@ -14,7 +14,10 @@ const connect = function () {
 
   conn.on ("connect", () => {
     console.log("connected");
-    conn.write ("Name: LL")
+    conn.write ("Name: LL");
+    const moveUP = () => conn.write ("Move: up")
+    setInterval(moveUP, 1000)
+   
   })
 
 

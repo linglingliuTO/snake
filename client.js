@@ -15,10 +15,11 @@ const connect = function () {
   conn.on ("connect", () => {
     console.log("connected");
     conn.write ("Name: LL");
-    const moveUP = () => conn.write ("Move: up")
-    setInterval(moveUP, 1000)
+    
    
   })
+
+
 
 
 
@@ -31,4 +32,4 @@ const connect = function () {
 
 
 
-module.exports = connect
+module.exports = {connect}
